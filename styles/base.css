@@ -8,10 +8,14 @@ body {
     font-family: "Artifika", serif;
 }
 
+header {
+    padding: 16px 0;
+}
+
 nav {
     margin-bottom: 16px;
-    padding: 11px;
     font-size: 21px;
+    padding: 11px;
     background-color: gold;
 }
 
