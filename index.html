@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="Elbert John Eastmond's home page for WDD 131 - Dynamic Web
+    Fundamentals. It has a little life sketch of John, a list of his interests, and links to sites
+    associated with him.">
+    <meta name="author" content="Elbert John Eastmond">
+    <title>WDD 131 - Dynamic Web Fundamentals - Elbert John Eastmond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Artifika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
-    <h1>WDD 131 - Elbert John Eastmond</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/elbert-eastmond-8450b4399/">LinkedIn</a>
+                </li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/4?lang=eng&id=p27#p27">
+                        Scripture
+                    </a>
+                </li>
+                <li><a href="project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Elbert John Eastmond</h1>
+        <div class="cards">
+            <section class="card">
+                <h2>Brief Bio</h2>
+                <figure class="portrait">
+                    <img src="images/john.jpg" alt="Photograph of John Eastmond">
+                </figure>
+                <figure class="photograph">
+                    <img src="images/many-kinds-of-beauty.jpg" alt="Patch of daisies">
+                    <figcaption>A photograph I took on my mission.</figcaption>
+                </figure>
+                <p class="bio">
+                    I have lived my entire life in Utah. I was born in Provo, grew up in Cedar City,
+                    and served a mission in Salt Lake City for The Church of Jesus Christ of Latter-day
+                    Saints. I currently am a BYU-Pathway student striving to get a Software Development
+                    Associate degree.
+                </p>
+            </section>
+            <section class="card">
+                <h2>Interests</h2>
+                <figure class="screenshot">
+                    <img src="images/ori-screenshot.jpg" alt="The sunstone in Ori and the Blind Forest">
+                    <figcaption>A screenshot I took while playing Ori and the Blind Forest.</figcaption>
+                </figure>
+                <p class="interests">
+                    I love reading, getting lost in my thoughts, and spending time with my family. I
+                    also am an avid collector of pictures, videos, music, quotes, and names. I really
+                    enjoy playing video games; some of my favorite ones are Ori and the Blind Forest,
+                    The Legend of Zelda: Skyward Sword, Minecraft, and the Toy Story 2 Action Game.
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Elbert John Eastmond | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
