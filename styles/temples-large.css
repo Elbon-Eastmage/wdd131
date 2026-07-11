@@ -13,7 +13,7 @@
     }
 
     nav {
-        display: block;
+        display: flex;
     }
 
     .album {

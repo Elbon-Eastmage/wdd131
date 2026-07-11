@@ -72,6 +72,11 @@ footer {
     justify-content: space-between;
 }
 
+.logo {
+    font-family: font-family: "artifika", serif;
+    font-size: 32px;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
