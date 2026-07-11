@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gabriela", serif;
+    background-color: azure;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: darkgreen;
+    color: white;
+}
+
+nav {
+    display: none;
+    text-align: center;
+    font-size: 21px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    padding: 1.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: azure;
+    color: black;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 80vw;
+    text-align: center;
+}
+
+h1 {
+    font-family: "artifika", serif;
+    font-size: 40px;
+}
+
+footer {
+    margin-top: 5rem;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 21px;
+    background-color: darkgreen;
+    color: white;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.shown {
+    display: block;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+}
+
+#hamburger {
+    display: block;
+    font-size: 40px;
+    border: none;
+    text-decoration: none;
+    background-color: darkgreen;
+    color: white;
+}
+
+#hamburger::before {
+    content: "≡";
+}
+
+#hamburger.active::before {
+    content: "X";
+}

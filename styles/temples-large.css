@@ -1,0 +1,33 @@
+@media only screen and (min-width: 900px) {
+    .album {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .album {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin-right: 1rem;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
