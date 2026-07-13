@@ -107,3 +107,7 @@ footer {
 #hamburger.active::before {
     content: "X";
 }
+
+#hamburger-label {
+    display: none;
+}
