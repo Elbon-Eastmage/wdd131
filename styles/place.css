@@ -1,0 +1,107 @@
+:root {
+    --solid-light-color: white;
+    --solid-dark-color: black;
+    --patriotic-color: #c00;
+    --text-size: 1.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--solid-light-color);
+    color: var(--solid-dark-color);
+}
+
+h1 {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 3rem;
+    background-color: var(--patriotic-color);
+    color: var(--solid-light-color);
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    font-size: var(--text-size);
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: var(--text-size);
+    background-color: var(--patriotic-color);
+    color: var(--solid-light-color);
+}
+
+.space {
+    background-color: darkblue;
+    padding: 1rem;
+}
+
+.card {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.card h2 {
+    padding: 1rem 0 0.5rem 0;
+    font-size: 2.5rem;
+}
+
+.card ul {
+    padding-bottom: 2rem;
+}
+
+.card li {
+    padding: 0.5rem;
+}
+
+.emphasize {
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 821px) {
+    .card {
+        position: absolute;
+        width: 20rem;
+        border-bottom: none;
+    }
+
+    .card h2 {
+        padding: 1rem;
+        background-color: rgb(0 0 200 / 0.7);
+        color: var(--solid-light-color);
+    }
+
+    .card ul {
+        padding-bottom: 0;
+        background-color: rgb(255 255 255 / 0.8);
+    }
+
+    .mobile-view {
+        display: none;
+    }
+
+    #data {
+        top: 10rem;
+        left: 1rem;
+    }
+
+    #weather {
+        top: 32vw;
+        right: 1rem;
+    }
+
+    #weather h2::after {
+        content: " ⛅";
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elbert John Eastmond">
+    <meta name="description" content="Provides weather data and basic information about England">
+    <title>England</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>England</h1>
+        <div class="space"></div>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/london.webp" media="(min-width: 821px)">
+            <img src="images/big-ben.webp" alt="Big Ben in London" width="1920" height="788">
+        </picture>
+        <div id="data" class="card">
+            <h2>Data</h2>
+            <ul>
+                <li><span class="emphasize">Capital:</span> London</li>
+                <li><span class="emphasize">Established:</span> 12 July 927</li>
+                <li><span class="emphasize">Currency:</span> Pound Sterling</li>
+                <li><span class="emphasize">National Animal:</span> Lion</li>
+                <li><span class="emphasize">National Tree:</span> Oak</li>
+                <li><span class="emphasize">National Flower:</span> Tudor Rose</li>
+            </ul>
+        </div>
+        <div id="weather" class="card">
+            <h2>Weather</h2>
+            <img id="cloud-sun" class="mobile-view" src="images/cloud-sun.svg" alt="Cloud in front of sun">
+            <ul>
+                <li><span class="emphasize">Temperature: </span>10°C</li>
+                <li><span class="emphasize">Sky: </span>Partially Overcast</li>
+                <li><span class="emphasize">Wind Speed: </span>9.7 km/h</li>
+                <li><span class="emphasize">Wind Chill: </span><span id="wind-chill"></span></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Elbert John Eastmond | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
