@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1,
+footer {
+    padding: 0.5rem 1rem;
+    background-color: indigo;
+    color: white;
+}
+
+form {
+    display: inline-block;
+    margin: 1rem 0 0.2rem 0;
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid gray;
+    background-color: wheat;
+}
+
+textarea {
+    height: 8rem;
+}
+
+select,
+input,
+textarea {
+    margin-top: 0.2rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    zoom: 1.2;
+}
+
+select,
+textarea,
+input[type="date"],
+input[type="text"],
+input[type="submit"] {
+    display: block;
+    width: 12rem;
+}
+
+select,
+input[type="date"],
+input[type="text"] {
+    height: 2.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="submit"] {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+.form-query {
+    margin-bottom: 1.25rem;
+}
+
+.important {
+    color: darkblue;
+}
+
+.simple-section {
+    margin-top: 4rem;
+}
+
+@media only screen and (min-width: 1050px) {
+    form {
+        width: 50rem;
+    }
+
+    select,
+    textarea,
+    input[type="date"],
+    input[type="text"],
+    input[type="submit"] {
+        width: 45rem;
+    }
+
+    textarea {
+        height: 16rem;
+    }
+}

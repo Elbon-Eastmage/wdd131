@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elbert John Eastmond">
+    <meta name="description" content="Users can review different products using the features of this page.">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div class="form-query">
+                <label for="product-name">Product Name<span class="important">*</span></label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <div class="form-query">
+                <p>Overall Rating<span class="important">*</span></p>
+                <div>
+                    <input type="radio" id="one" name="rating" value="one" required>
+                    <label for="one">☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="two" name="rating" value="two" required>
+                    <label for="two">☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="three" name="rating" value="three" required>
+                    <label for="three">☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="four" name="rating" value="four" required>
+                    <label for="four">☆☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" id="five" name="rating" value="five" required>
+                    <label for="five">☆☆☆☆☆</label>
+                </div>
+            </div>
+
+            <div class="form-query">
+                <label for="installation-date">Date of Installation<span class="important">*</span></label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </div>
+
+            <div class="form-query">
+                <p>Useful Features</p>
+                <div>
+                    <input type="checkbox" id="stability" name="stability" value="stability">
+                    <label for="stability">Stability</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="user-friendly" name="user-friendly" value="user-friendly">
+                    <label for="user-friendly">User-friendly</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="power" name="power" value="power">
+                    <label for="power">Power</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="temperature" name="temperature" value="temperature">
+                    <label for="temperature">Low Temperature</label>
+                </div>
+            </div>
+
+            <div class="form-query">
+                <label for="written-review">Written Review</label>
+                <textarea id="written-review" name="written-review"></textarea>
+            </div>
+
+            <div class="form-query">
+                <label for="user-name">User Name</label>
+                <input type="text" id="user-name" name="user-name">
+            </div>
+            <input type="submit" value="Post Review">
+        </form>
+        <p>(<span class="important">*</span>Required)</p>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Elbert John Eastmond | Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
